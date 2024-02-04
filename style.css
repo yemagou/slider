@@ -1,0 +1,229 @@
+*, ::before, ::after{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0%;
+    padding: 0%;
+    background: #333;
+    height: 100vh;
+    width: 100%;
+    font-family: "poppins";
+    overflow: hidden;
+}
+
+
+.block{
+    height: 100vh;
+    /* height: 100%; */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.gauche{
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    background: rgb(221,221,221);
+}
+
+.carré{
+    display: flex;
+    padding: 02%;
+}
+
+.carréH{
+    font-size: 30px;
+    height: 125px;
+    width: 225px;
+    margin: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px dashed black;
+}
+
+.barrejum{
+    padding-top: 10%;
+    margin-left: -1%;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+}
+
+.barre{
+    width: 175px;
+    height: 5px;
+    background: #333;
+    border-radius: 5px;
+}
+
+.barre1{
+    margin-left: 110px;
+}
+
+.texte1{
+    margin-top: -7%;
+    margin-left: 39%;
+}
+
+.titreG{
+    font-size: 1.8em;
+}
+
+.txtgauche{
+    margin-top: -5%;
+}
+
+.texte2{
+    margin-left: 39%;
+}
+
+.bmw{
+    font-size: 5em;
+}
+
+.txtgauche1{
+    margin-top: -7%;
+}
+
+.droite{
+    width: 50%;
+    height: 100%;
+    background: rgb(221,221,221);
+}
+
+.d1{
+    background: url('../slider/ressource/BMW\ 1\ Series\ M135i\ 021_fa7yzk.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 80% 100%;
+}
+
+.boxbtns{
+    display: flex;
+    padding-left: 15px;
+}
+
+.btn{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.btn2{
+    margin-top: 14%;
+    /* ..margin-right: 20%;
+    ..align-self: flex- end; */
+}
+
+.medium{
+    font-family: "Abril Fatface";
+    font-size: 80px;
+    margin: 0%;
+    padding-left: 15px;
+    margin-top: 1%;
+}
+
+.st, .titre{
+    text-align: center;
+    font-family: helvetica;
+    animation: load 1s infinite;
+}
+
+@keyframes load{
+    60%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0.3;
+        filter: blur(5px);
+    }
+}
+
+.mt1{
+    color: #292430;
+}
+
+/* ..second grid */
+
+.titreG1{
+    font-size: 1.8em;
+    color: red;
+}
+
+.ferrari{
+    font-size: 5em;
+    color: red;
+}
+
+.d2{
+    background: url('../slider/ressource/800px-0_488_GTB.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 80% 100%;
+}
+
+.mt2{
+    color: red;
+}
+
+/* troisième grille */
+
+.titreG2{
+    font-size: 1.8em;
+    color: blue;
+}
+
+.peugeot{
+    font-size: 5em;
+    color: blue;
+}
+
+.d3{
+    background: url('../slider/ressource/S0-peugeot-2008-sport-concept-2023-du-grand-delire-750766.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 80% 100%;
+}
+
+.mt3{
+    color: blue;
+}
+
+/*  */
+
+.animbtn{
+    animation: denied 0.4s forwards;
+}
+
+@keyframes denied {
+    0%{
+        transform: translateX(0px);
+        background: rgb(218,218,218);
+    }
+    20%{
+        transform: translateX(-5px);
+    }
+    40%{
+        transform: translateX(5px);
+        background: #ff7569;
+    }
+    60%{
+        transform: translateX(-5px);
+    }
+    80%{
+        transform: translateX(5px);
+    }
+    100%{
+        transform: translateX(0px);
+        background: rgb(218,218,218);
+    }
+}
